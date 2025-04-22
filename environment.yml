@@ -1,5 +1,6 @@
-name: aiml25-ma3
+name: aiml25-exam
 channels:
-  - conda-forge
+  - defaults
   - https://repo.anaconda.com/pkgs/main
   - https://repo.anaconda.com/pkgs/r
+prefix: /opt/anaconda3/envs/aiml25-exam
