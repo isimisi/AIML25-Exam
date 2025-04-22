@@ -1,0 +1,1 @@
+# Exam for the course AI & ML 2025
