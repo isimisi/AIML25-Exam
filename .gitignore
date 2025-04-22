@@ -178,3 +178,6 @@ poetry.toml
 
 # LSP config files
 pyrightconfig.json
+
+runs
+labels.cache
