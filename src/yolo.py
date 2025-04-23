@@ -1,25 +1,7 @@
 from ultralytics import YOLO
 
-model = YOLO("yolo11n.pt")
-
-train_results = model.train(
-    data="datasets/dataset.yml",
-    epochs=10,
-    imgsz=640,
-    device="cpu"
-)
+model = YOLO("yolo-trained.pt")
 
 results = model("datasets/test/images/1.png")
 
-boxes = results[0].boxes  
-class_ids = boxes.cls.cpu().numpy()
-confidences = boxes.conf.cpu().numpy()
-
-class_names = model.names
-
-for cls_id, conf in zip(class_ids, confidences):
-    label = class_names[int(cls_id)]
-    print(f"Detected: {label} (confidence: {conf:.2f})")
-
-model.export(format="onnx", dynamic=True)
-# results[0].save(filename="predicted_image.jpg")
+results[0].show()
