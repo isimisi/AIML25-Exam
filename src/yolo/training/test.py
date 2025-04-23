@@ -9,7 +9,7 @@
 from ultralytics import YOLO
 from src.utils.path import from_root
 #%%
-model = YOLO(from_root("yolo-trained.pt"))
+model = YOLO(from_root("models/yolo-trained.pt"))
 
 #%%
 results = model(from_root("datasets/test/images/1.png"))
