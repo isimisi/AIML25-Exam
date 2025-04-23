@@ -2,7 +2,7 @@
 from ultralytics import YOLO
 
 #%%
-model = YOLO("yolov8m.pt")
+model = YOLO("yolov8m-seg.pt")
 
 train_results = model.train(
     data="datasets/dataset.yml",
