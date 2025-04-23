@@ -23,6 +23,18 @@ dependencies:
   - tqdm
   - libpng
   - jpeg
+  - numpy
   - pip:
       - ultralytics
       - langchain-community
+      - chromadb
+      - ibm-watsonx-ai
+      - instructor
+      - langchain
+      - langchain-chroma
+      - langchain-core
+      - langchain-ibm
+      - langchain-text-splitters
+      - langgraph
+      - litellm
+      - pandas
