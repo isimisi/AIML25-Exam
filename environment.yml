@@ -24,6 +24,8 @@ dependencies:
   - libpng
   - jpeg
   - numpy
+  - networkx
+  - pygraphviz
   - pip:
       - ultralytics
       - langchain-community

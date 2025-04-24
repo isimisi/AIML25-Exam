@@ -181,3 +181,5 @@ pyrightconfig.json
 
 runs
 labels.cache
+tmp
+*.pt
