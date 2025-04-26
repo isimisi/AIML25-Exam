@@ -1,4 +1,4 @@
-#%%
+# %%
 # import os
 # from pathlib import Path
 
@@ -7,6 +7,8 @@
 # print(f"Working directory set to: {Path.cwd()}")
 
 # %%
+from src.utils.path import from_root
+from ultralytics import YOLO
 import sys
 from pathlib import Path
 
@@ -14,26 +16,24 @@ from pathlib import Path
 sys.path.append(str(Path(__file__).resolve().parents[3]))
 
 # %%
-from ultralytics import YOLO
-from src.utils.path import from_root
-#%%
+# %%
 model = YOLO(from_root("models/yolo-trained.pt"))
 
-#%%
+# %%
 results = model(from_root("datasets/test/images/1.png"))
 
 results[0].show()
 # %%
 results
 # %%
-boxes = results[0].boxes  
+boxes = results[0].boxes
 class_ids = boxes.cls.cpu().numpy()
 confidences = boxes.conf.cpu().numpy()
 
-#%%
+# %%
 boxes[0].xyxy.tolist()[0]
 print(boxes[0])
-#%%
+# %%
 class_names = model.names
 
 for cls_id, conf in zip(class_ids, confidences):

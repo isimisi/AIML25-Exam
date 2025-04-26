@@ -3,11 +3,14 @@ from PIL import Image
 from typing import List
 from typing_extensions import TypedDict
 
+
 class Detection(TypedDict):
     xywh: List[float]
     confidence: float
     class_id: int
     xyxy: List[float]
+
+
 class Yolo:
     _file: str
     _results: list
@@ -17,7 +20,7 @@ class Yolo:
         self._model = model
         self._results = []
         self._file = ""
-    
+
     def predict(self, file: str):
         self._results = self._model(file)
         self._file = file
@@ -28,16 +31,16 @@ class Yolo:
         result = self._results[0]
         for box in result.boxes:
             bboxes.append({
-                    "xywh": box.xywh.tolist()[0],
-                    "confidence": float(box.conf),
-                    "class_id": int(box.cls),
-                    "xyxy": box.xyxy.tolist()[0]
-                })
+                "xywh": box.xywh.tolist()[0],
+                "confidence": float(box.conf),
+                "class_id": int(box.cls),
+                "xyxy": box.xyxy.tolist()[0]
+            })
         return bboxes
 
     def show(self) -> None:
         self._results.show()
-    
+
     def cropImages(self, bboxes: List[Detection]):
         images: List[Image.Image] = []
         for bbox in bboxes:

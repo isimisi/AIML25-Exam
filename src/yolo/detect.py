@@ -3,6 +3,7 @@
 from ultralytics import YOLO
 from src.utils.path import from_root
 
+
 def run_custom_yolo(image_path: str):
     model = YOLO(from_root("models/yolo-trained.pt"))
     results = model(from_root(image_path))
