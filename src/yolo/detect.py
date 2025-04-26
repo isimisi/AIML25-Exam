@@ -1,7 +1,7 @@
 # src/yolo/detect.py
 
 from ultralytics import YOLO
-from src.utils.path import from_root  # your helper function to resolve paths
+from src.utils.path import from_root
 
 def run_custom_yolo(image_path: str):
     model = YOLO(from_root("models/yolo-trained.pt"))
