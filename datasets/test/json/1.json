@@ -1,0 +1,114 @@
+[
+    {
+        "source": "Life Interest Trust 1",
+        "target": "Main Group TopCo"
+    },
+    {
+        "source": "Life Interest Trust 2",
+        "target": "Main Group TopCo"
+    },
+    {
+        "source": "Life Interest Trust 1",
+        "target": "BVI Group TopCo"
+    },
+    {
+        "source": "Life Interest Trust 2",
+        "target": "BVI Group TopCo"
+    },
+    {
+        "source": "BVI Group TopCo",
+        "target": "BVI Group Sub 1"
+    },
+    {
+        "source": "BVI Group Sub 1",
+        "target": "BVI Group Sub 2"
+    },
+    {
+        "source": "Main Group TopCo",
+        "target": "GroupCo 1"
+    },
+    {
+        "source": "Main Group TopCo",
+        "target": "GroupCo 2"
+    },
+    {
+        "source": "Main Group TopCo",
+        "target": "GroupCo 3"
+    },
+    {
+        "source": "Main Group TopCo",
+        "target": "GroupCo 4"
+    },
+    {
+        "source": "GroupCo 4",
+        "target": "Co 4 Limited"
+    },
+    {
+        "source": "GroupCo 4",
+        "target": "Co 5 Limited"
+    },
+    {
+        "source": "GroupCo 2",
+        "target": "Co 2 Limited"
+    },
+    {
+        "source": "GroupCo 2",
+        "target": "Co 3 Limited"
+    },
+    {
+        "source": "GroupCo 2",
+        "target": "Co 1 Limited"
+    },
+    {
+        "source": "Co 2 Limited",
+        "target": "Co 6 Limited"
+    },
+    {
+        "source": "Co 6 Limited",
+        "target": "Co 7 Limited"
+    },
+    {
+        "source": "Co 7 Limited",
+        "target": "Co 8 Limited"
+    },
+    {
+        "source": "Co 7 Limited",
+        "target": "Co 9 Limited"
+    },
+    {
+        "source": "Co 9 Limited",
+        "target": "Co 10 Limited"
+    },
+    {
+        "source": "Co 8 Limited",
+        "target": "Other Subs"
+    },
+    {
+        "source": "GroupCo 2",
+        "target": "Partnership"
+    },
+    {
+        "source": "Main Group TopCo",
+        "target": "Facility 1"
+    },
+    {
+        "source": "Main Group TopCo",
+        "target": "Facility 2"
+    },
+    {
+        "source": "Main Group TopCo",
+        "target": "Facility 3"
+    },
+    {
+        "source": "Main Group TopCo",
+        "target": "Facility 4"
+    },
+    {
+        "source": "Facility 1 lenders",
+        "target": "Facility 1"
+    },
+    {
+        "source": "Facility 2 lenders",
+        "target": "Facility 2"
+    }
+]

@@ -1,0 +1,30 @@
+[
+    {
+        "source": "Owner 1",
+        "target": "Entity"
+    },
+    {
+        "source": "Owner 1",
+        "target": "Company 2"
+    },
+    {
+        "source": "Owner 3",
+        "target": "Company 3"
+    },
+    {
+        "source": "Owner 3",
+        "target": "Entity"
+    },
+    {
+        "source": "Fund 1",
+        "target": "Company 2"
+    },
+    {
+        "source": "Fund 2",
+        "target": "Company 3"
+    },
+    {
+        "source": "Entity",
+        "target": "Company 1"
+    }
+]

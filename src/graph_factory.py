@@ -3,6 +3,7 @@ from typing import List, TypedDict, Tuple, Dict
 import networkx as nx
 import matplotlib.pyplot as plt
 from networkx.drawing.nx_agraph import graphviz_layout
+from thefuzz import fuzz
 
 
 class RawEdge(TypedDict):
@@ -82,6 +83,7 @@ class Node:
 class GraphFactory:
     nodes: List[Node]
     edges: List[Edge]
+    fuzzy_threshold = 90
 
     def __init__(self, raw: List[RawEdge]):
         self.edges = self.unique(self.set_id(raw))
@@ -92,6 +94,27 @@ class GraphFactory:
         for edge in edges:
             unique_dict[edge.id] = edge
         return list(unique_dict.values())
+
+    def fuzzy_unique(self, edges: List[Edge]) -> List[Edge]:
+        """
+        This don't work well, as nodes have very similar labels
+        """
+
+        unique_edges: List[Edge] = []
+        seen_ids: List[str] = []
+
+        for edge in edges:
+            is_duplicate = False
+            for seen_id in seen_ids:
+                ratio = fuzz.ratio(edge.id, seen_id)
+                if ratio > self.fuzzy_threshold:
+                    is_duplicate = True
+                    break
+            if not is_duplicate:
+                unique_edges.append(edge)
+                seen_ids.append(edge.id)
+
+        return unique_edges
 
     def set_id(self, edges: List[RawEdge]) -> List[Edge]:
         return [Edge(edge["source"], edge["target"]) for edge in edges]
@@ -232,6 +255,10 @@ test_edges: List[RawEdge] = [
     },
     {
         "source": "Main Group TopCo",
+        "target": "Facility 2",
+    },
+    {
+        "source": "Group TopCo",
         "target": "Facility 2",
     },
     {
