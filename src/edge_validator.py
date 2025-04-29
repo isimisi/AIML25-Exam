@@ -1,4 +1,4 @@
-from src.graph_factory import Edge
+from src.graph import Edge
 from typing import List, Dict, Any
 import json
 

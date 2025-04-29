@@ -1,5 +1,5 @@
 from pydantic import BaseModel, Field
-from src.graph_factory import Edge
+from src.graph import Edge
 from typing import List, Dict, Any
 import base64
 import litellm

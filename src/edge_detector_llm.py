@@ -1,5 +1,5 @@
 from pydantic import BaseModel, Field
-from src.graph_factory import RawEdge
+from src.graph import RawEdge
 from typing import List, TypeVar, Any, Union
 import base64
 import litellm
