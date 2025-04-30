@@ -78,7 +78,7 @@ class NodeDetector(BaseDetector):
             Image Content:
                 Nodes may include shapes, text, or small illustrations.
                 The image is part of a larger flowchart, which means that partial connections may appear.
-                
+
             Output:
                 {type(NodeResponse)}    
         """
@@ -111,7 +111,6 @@ class EdgeDetector(BaseDetector):
             Instructions:
                 - For each connection (line/arrow) between nodes in the image:
                 - Identify the connected nodes using their labels.
-                - Match source and target by their node IDs from the input list.
                 - Ensure output is valid JSON and contains only **edge objects** (no nodes).
 
             Output:
@@ -131,7 +130,7 @@ class EdgeDetector(BaseDetector):
             Instructions:
                 - For each connection (line/arrow) between nodes in the image:
                 - Identify the connected nodes using their labels.
-                - Match source and target by their node IDs from the input list.
+                - Match source and target by their node labels from the input list.
                 - Ensure output is valid JSON and contains only **edge objects** (no nodes).
 
             Output:
