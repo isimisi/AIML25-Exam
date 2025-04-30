@@ -1,5 +1,5 @@
 from pydantic import BaseModel, Field
-from src.graph_factory import RawEdge
+from src.graph import RawEdge
 from typing import List, TypeVar, Any, Union
 import base64
 import litellm
@@ -66,14 +66,15 @@ class EdgeDetectorLLM:
             Edges describe relationships and are represented as lines/arrows between nodes.
             The image is part of a larger flowchart, which means that partial connections may appear.
         
-        Input Contents:
-            Existing JSON structure with defined edges from previous images of the full structure. Use this to update or expand the structure with new connections detected in the image.
-
-        Found edges:
-            {found_edges}
 
         Provide your answer as an object of {type(EdgeResponse)}
         """
+
+        # Input Contents:
+        #     Existing JSON structure with defined edges from previous images of the full structure. Use this to update or expand the structure with new connections detected in the image.
+
+        # Found edges:
+        #     {found_edges}
 
         return {"type": "text", "text": prompt}
 
