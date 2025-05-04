@@ -1,6 +1,7 @@
 from src.graph import Edge
 from typing import List, Dict, Any
 import json
+import re
 
 
 class EdgeValidator:
@@ -29,12 +30,17 @@ class EdgeValidator:
         return cls.from_json(data, predicted_edges)
 
     def validate(self) -> dict:
-        true_ids = {edge.id.lower() for edge in self.true_edges}
-        pred_ids = {edge.id.lower() for edge in self.predicted_edges}
+        true_ids = {
+            re.sub(r'\s+', '', edge.id).lower()
+            for edge in self.true_edges
+        }
+        pred_ids = {
+            re.sub(r'\s+', '', edge.id).lower()
+            for edge in self.predicted_edges
+        }
 
         tp_ids = true_ids & pred_ids
         fp_ids = pred_ids - true_ids
-        fn_ids = true_ids - pred_ids
 
         precision = len(tp_ids) / len(pred_ids) if pred_ids else 0.0
         recall = len(tp_ids) / len(true_ids) if true_ids else 0.0
@@ -44,7 +50,6 @@ class EdgeValidator:
         return {
             "true_positives": list(tp_ids),
             "false_positives": list(fp_ids),
-            "false_negatives": list(fn_ids),
             "precision": precision,
             "recall": recall,
             "f1_score": f1
