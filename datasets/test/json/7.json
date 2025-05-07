@@ -1,0 +1,62 @@
+[
+    {
+        "source": "TopCo Fund",
+        "target": "TopCo 1"
+    },
+    {
+        "source": "TopCo 1",
+        "target": "Beneficiary"
+    },
+    {
+        "source": "TopCo 2",
+        "target": "Beneficiary"
+    },
+    {
+        "source": "Beneficiary",
+        "target": "Person 1"
+    },
+    {
+        "source": "Beneficiary",
+        "target": "Person 2"
+    },
+    {
+        "source": "Beneficiary",
+        "target": "External Bank"
+    },
+    {
+        "source": "External Bank",
+        "target": "BidCo"
+    },
+    {
+        "source": "LP1",
+        "target": "PE Fund 1"
+    },
+    {
+        "source": "LP2",
+        "target": "PE Fund 1"
+    },
+    {
+        "source": "LP3",
+        "target": "PE Fund 1"
+    },
+    {
+        "source": "Reinvesting Management",
+        "target": "BidCo"
+    },
+    {
+        "source": "PE Fund 1",
+        "target": "BidCo"
+    },
+    {
+        "source": "BidCo",
+        "target": "Seller"
+    },
+    {
+        "source": "PE Fund 2",
+        "target": "Seller"
+    },
+    {
+        "source": "BidCo",
+        "target": "Target"
+    }
+]

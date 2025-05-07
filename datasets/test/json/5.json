@@ -1,0 +1,58 @@
+[
+    {
+        "source": "LP 1",
+        "target": "PE Fund 40"
+    },
+    {
+        "source": "LP 2",
+        "target": "PE Fund 40"
+    },
+    {
+        "source":"LP 3",
+        "target":"PE Fund 40"
+    },
+    {
+        "source": "Reinvesting Management",
+        "target": "BidCo"
+    },
+    {
+        "source": "PE Fund 40",
+        "target": "BidCo"
+    },
+    {
+        "source": "PE Fund 10",
+        "target": "BidCo"
+    },
+    {
+        "source": "BidCo",
+        "target": "Target"
+    },
+    {
+        "source": "BidCo",
+        "target": "Seller"
+    },
+    {
+        "source": "Seller",
+        "target": "BidCo"
+    },
+    {
+        "source": "BidCo",
+        "target": "External Bank"
+    },
+    {
+        "source": "External Bank",
+        "target": "BidCo"
+    }, 
+    {
+        "source": "Target",
+        "target": "DK Subsidary"
+    },
+    {
+        "source": "Target",
+        "target":"NO Subsidary"
+    },
+    {
+        "source": "Target",
+        "target":"SE Subsidary"
+    }
+]

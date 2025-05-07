@@ -1,0 +1,54 @@
+[
+    {
+        "source": "GP",
+        "target": "PE Fund 1"
+    },
+    {
+        "source": "LP 1",
+        "target": "PE Fund 1"
+    },
+    {
+        "source": "LP 2",
+        "target": "PE Fund 1"
+    },
+    {
+        "source": "PE Fund 1",
+        "target": "HoldCo 1"
+    },
+    {
+        "source": "HoldCo 1",
+        "target": "Bank"
+    },
+    {
+        "source": "Bank",
+        "target": "HoldCo 1"
+    },
+    {
+        "source": "HoldCo 1",
+        "target": "HoldCo 2"
+    },
+    {
+        "source": "HoldCo 2",
+        "target": "HoldCo 1"
+    },
+    {
+        "source": "Shareholders",
+        "target": "HoldCo 2"
+    },
+    {
+        "source": "PE Fund 2",
+        "target": "HoldCo 2"
+    },
+    {
+        "source": "HoldCo 1",
+        "target": "Target Group 1"
+    },
+    {
+        "source": "Target Group 1",
+        "target": "Target Group 2"
+    },
+    {
+        "source": "Target Group 1",
+        "target": "Target Group 3"
+    }
+]

@@ -1,0 +1,54 @@
+[
+    {
+        "source": "BIOSPHERE TOPCO LIMITED",
+        "target": "Loop MidCo ApS"
+    },
+    {
+        "source": "Loop MidCo ApS",
+        "target": "Loop BidCo ApS"
+    },
+    {
+        "source": "Loop BidCo ApS",
+        "target": "Reconor Holding ApS"
+    },
+    {
+        "source": "Reconor Holding ApS",
+        "target": "MH Gruppen MidCo ApS"
+    },
+    {
+        "source": "MH Gruppen MidCo ApS",
+        "target": "Reconor A/S"
+    },
+    {
+        "source": "Reconor A/S",
+        "target": "City Container Jylland A/S"
+    },
+    {
+        "source": "Reconor A/S",
+        "target": "City Container Danmark A/S"
+    },
+    {
+        "source": "City Container Danmark A/S",
+        "target": "CITY CONTAINER FYN A/S"
+    },
+    {
+        "source": "Reconor A/S",
+        "target": "NORRECCO A/S"
+    },
+    {
+        "source": "NORRECCO A/S",
+        "target": "Norrecco Uge ApS"
+    },
+    {
+        "source": "NORRECCO A/S",
+        "target": "Norrecco Agerskov A/S"
+    },
+    {
+        "source": "Norrecco Agerskov A/S",
+        "target": "Mijodan Ejendomme ApS"
+    },
+    {
+        "source": "Reconor A/S",
+        "target": "CITY CONTAINER A/S"
+    }
+]

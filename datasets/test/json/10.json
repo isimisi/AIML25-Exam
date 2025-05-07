@@ -1,0 +1,42 @@
+[
+    {
+        "source": "Fund 1",
+        "target": "Foreign TopCo"
+    },
+    {
+        "source": "Fund 2",
+        "target": "Foreign TopCo"
+    },
+    {
+        "source": "Fund 3",
+        "target": "Foreign TopCo"
+    },
+    {
+        "source": "Co-investors",
+        "target": "HoldCo"
+    },
+    {
+        "source": "Foreign TopCo",
+        "target": "HoldCo"
+    },
+    {
+        "source": "HoldCo",
+        "target": "TopCo"
+    },
+    {
+        "source": "TopCo",
+        "target": "MidCo"
+    },
+    {
+        "source": "MidCo",
+        "target": "BidCo"
+    },
+    {
+        "source": "External bank facility",
+        "target": "TopCo"
+    },
+    {
+        "source": "External bank facility",
+        "target": "BidCo"
+    }
+]
