@@ -20,6 +20,8 @@ class BaseResponse(BaseModel):
 # For type-hinting structured responses:
 ResponseType = TypeVar("ResponseType", bound=BaseModel)
 
+# Code taking from MA3 and modified
+
 
 class LLMCaller:
     """A class to interact with an LLM using LiteLLM and Instructor."""
